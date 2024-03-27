@@ -1,0 +1,78 @@
+*{
+    padding: 1pxpx;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #00093c, #3d0b00);
+  }
+  
+  :root{
+  --boxShadowInset: inset 5px 5px 7px #0c0c0e, inset -5px -5px 7px #2e3036;
+  --boxShadow:  5px 5px 7px #0c0c0e,  -5px -5px 7px #2e3036;
+  }
+  
+  form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 50px 50px 50px;
+    border-radius: 8px;
+    box-shadow:  var(--boxShadowInset);
+  }
+  
+  .head{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    padding: 25px;
+  }
+  
+  input{
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 4px;
+    box-shadow: var(--boxShadow);
+    transition: .2s;
+  }
+  
+  input:focus{
+    box-shadow: var(--boxShadowInset);
+  }
+  
+  button{
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: var(--boxShadow);
+  
+  }
+  p{
+    padding: 20px;
+    
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+  }
+  .forgot{
+    text-align: center;
+    color: white;
+    font-size: 12px;
+  }
+  
+  .forgot a{
+    color: aquamarine;
+  }
+    
